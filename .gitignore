@@ -1,0 +1,41 @@
+# Allowlist: ignore everything, then include only the files below.
+*
+!.gitignore
+!.gitattributes
+!README.md
+!thesis/
+!thesis/Master_Thesis.pdf
+!requirements.txt
+
+# Entry points
+!run_binary.py
+!run_binary_8regimes.py
+
+# Data preparation / EDA notebooks (outputs are stripped on commit)
+!data_processing.ipynb
+!yfinance_data_download.ipynb
+!merge.ipynb
+!hp_filter_cpi.ipynb
+!Augmented_DF.ipynb
+!thesis_data_EDA.ipynb
+
+# Model package
+!models/
+!models/*.py
+models/structural_mh_old.py
+models/sampling.py
+models/per_draw_relabel.py
+models/permutation_8regimes.py
+models/test.py
+models/test2.py
+models/grid_search.py
+run_model.py
+run_model2.py
+
+# Never commit data, figures or IDE files
+data/
+Figures/
+.idea/
+.ipynb_checkpoints/
+__pycache__/
+.DS_Store
