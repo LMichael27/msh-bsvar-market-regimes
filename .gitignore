@@ -5,6 +5,9 @@
 !README.md
 !thesis/
 !thesis/Master_Thesis.pdf
+!docs/
+!docs/images/
+!docs/images/*.png
 !requirements.txt
 
 # Entry points
